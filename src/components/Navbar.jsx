@@ -1,21 +1,25 @@
 import React from 'react'
 
 function Navbar() {
-    const name="<Zakaria />"
+    const name="< zakaria />."
   return (
-    <div className='flex justify-between items-center  w-5/6 bg-red-300 mx-auto'>
-        <h1>
+    <div className='border-b-4 '>
+      <div className="nav flex justify-between items-center p-4   w-5/6 text-black mx-auto">
+         <div className='text-xl font-bold'>
             {name}
-        </h1>
-        <ul className='flex gap-2 '>
-            <li className='cursor-pointer'>Home</li>
-            <li className='cursor-pointer'>About</li>
-            <li className='cursor-pointer'>Education</li>
-            <li className='cursor-pointer'>Projects</li>
-            <li className='cursor-pointer'>Contact</li>
-
-        </ul>
-        <div>@zakariamourid</div>
+        </div>
+        <div className=''>
+          <nav className='flex gap-4 '>
+            <a className='cursor-pointer text-black hover:scale-110 transition-all'>Home</a>
+            <a className='cursor-pointer text-black hover:scale-110 transition-all'>About</a>
+            <a className='cursor-pointer text-black hover:scale-110 transition-all'>Education</a>
+            <a className='cursor-pointer text-black hover:scale-110 transition-all'>Projects</a>
+            <a className='cursor-pointer text-black hover:scale-110 transition-all'>Contact</a>          
+        </nav >
+        {/* <div className="dot w-4 border-b-4 border-dotted translate-x-3 hidden "></div> */}
+        </div>
+        <div><a href="https://twitter.com/zakariamourid10" className=' hover:underline transition-all hover:text-blue-500' target='_blank' >@zakariamourid10</a></div>
+      </div>
     </div>
   )
 }

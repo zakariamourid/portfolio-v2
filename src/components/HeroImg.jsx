@@ -1,21 +1,21 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import lottie from "lottie-web";
 import animationData from "../assets/user-interface.json";
 
 function HeroImg() {
-  const container = useRef(null);
-
   useEffect(() => {
-    lottie.loadAnimation({
-      container: container.current,
+    const container = document.querySelector("#hero-img-container");
+    const animation = lottie.loadAnimation({
+      container: container,
       renderer: "svg",
       loop: true,
       autoplay: true,
       animationData: animationData,
     });
+    animation.setSpeed(0.5);
   }, []);
 
-  return <div ref={container}></div>;
+  return <div id="hero-img-container"></div>;
 }
 
 export default HeroImg;

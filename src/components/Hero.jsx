@@ -14,7 +14,7 @@ function Hero() {
         </p>
         <a
           target="_blank"
-          href="https://drive.google.com/drive/folders/1R761tUMn0_OZXDV5SNJzXkZWuch4Zg3A"
+          href="https://drive.google.com/file/d/11t5lovn30r5DavUthZGJqMFB3GnWNkIA/view?usp=sharing"
           className="py-2 px-4 text-center text-white bg-orange-400 rounded-lg  cursor-pointer hover:scale-105 inline-block transition-all "
         >
           <FaFileArrowDown className="inline mr-2" />

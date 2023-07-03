@@ -5,8 +5,9 @@ import { RxCross2 } from "react-icons/rx";
 function Navbar() {
   const name = "< zakaria />";
   const [toggle, setToggle] = useState(false);
+
   return (
-    <div className="border-b-2 ">
+    <div className="border-b border-orange-400  shadow-lg ">
       <div className="nav flex justify-between items-center py-4 w-5/6 mx-auto">
         <div className="text-xl font-bold">{name}</div>
         {/* desktop menu */}
